@@ -1,0 +1,18 @@
+body {
+    background: black;
+}
+h2 {
+    font-size: 50px;
+    display: inline
+}
+
+
+.textGradient {
+    background: linear-gradient(45deg, 
+    #fd0000,
+    rgb(255, 0, 255),
+    aqua);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
