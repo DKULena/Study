@@ -2,7 +2,7 @@ html {
     font-size: 62.5%; /* 1rem = 10px */
 }
 body {
-    margin: auto 2rem
+    margin: auto 5rem
 }
 main {
     margin-top: 2rem;
@@ -27,7 +27,7 @@ main {
 }
 
 .titleCont{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .title {
     font-size: 4rem;

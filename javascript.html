@@ -9,7 +9,7 @@
   <body>
     <header class="home"><a href="home.html">Home</a></header>
     <main>
-      <div class="card">
+      <div class="card" id="TruthyFalsy">
         <div class="titleCont">
           <div class="title">Truthy & Falsy</div>
           <div class="titleDescription">True/False로 '취급'되는 값</div>
@@ -19,7 +19,7 @@
           Falsy(7개) - undefined, null, 0, -0, NaN, ""(빈문자열), 0n
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="단락평가">
         <div class="titleCont">
           <div class="title">단락평가(Short-circuit Evaluation)</div>
           <span class="titleDescription">논리 연산자 사용 시 평가 최적화</span>
@@ -33,7 +33,7 @@
           번째 값을 반환
         </div>
       </div>
-      <div class="card">
+      <div class="card" id="Destructuring">
         <div class="titleCont">
           <div class="title">구조분해할당(destructuring)</div>
           <div class="titleDescription">
@@ -51,11 +51,11 @@
           <p style="text-decoration: underline; text-underline-offset: .5rem;">객체 구조분해할당</p>
           <pre style="border: 1px solid black;">
 let person = {
-  name: "이성재",
-  age: 27,
-  hobby: 코딩
-}            </pre
-          >
+name: "이성재",
+age: 27,
+hobby: 코딩
+}
+</pre>            
           <p>let {name, age, hobby} = person;</p>
           <p>Result = name:이성재, age:27, hobby:코딩</p>
         </div>
@@ -67,6 +67,16 @@ const func = ({ name, age, hobby }) {
 }</pre>
           <p>Result = name:이성재, age:27, hobby:코딩</p>
         </div>
+      </div>
+      <div class="card" id="DataType">
+        <div class="titleCont">
+          <div class="title">원시타입 VS. 객체타입</div>
+          <div class="titleDescription">두 타입으로 나눠놓는 이유는 값이 저장되거나 복사되는 과정이 다르기 때문</div>
+        </div>
+        <div class="content">
+          원시타입: Number, String, Boolean, Null, Undefined
+        </div>
+        <div class="content">객체타입: Array, Object, RegexExp(정규표현식)</div>
       </div>
     </main>
   </body>
