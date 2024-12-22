@@ -10,9 +10,20 @@
     <header class="home"><a href="home.html">Home</a></header>
     <main>
         <div class="card">
+          <div class="titleCont">
             <div class="title">Truthy & Falsy</div>
-            <div class="truthy">Truthy - Falsy 빼고 전부</div>
-            <div class="falsy">Falsy(7개) - undefined, null, 0, -0, NaN, ""(빈문자열), 0n</div>
+            <div class="titleDescription">True/False로 '취급'되는 값</div>
+          </div>
+            <div class="content">Truthy - Falsy 빼고 전부</div>
+            <div class="content">Falsy(7개) - undefined, null, 0, -0, NaN, ""(빈문자열), 0n</div>
+        </div>
+        <div class="card">
+          <div class="titleCont">
+            <div class="title">단락평가(Short-circuit Evaluation)</div>
+            <span class="titleDescription">논리 연산자 사용 시 평가 최적화</span>
+          </div>
+          <div class="content">AND 연산자 (&&) - 처음 만나는 False값 반환, 둘 다 True면 두번째 값 반환</div>
+          <div class="content">OR  연산자 ( || ) -  첫 번째 값이 true면 첫 번째 값을 반환, false면 두 번째 값을 반환</div>
         </div>
     </main>
   </body>

@@ -1,19 +1,24 @@
 html {
     font-size: 62.5%; /* 1rem = 10px */
 }
+body {
+    margin: auto 2rem
+}
+main {
+    margin-top: 2rem;
+}
 
 .home {
     font-size: 5rem;
-    margin-bottom: 2rem;
     text-align: center;
 }
 
 .card {
-    font-size: 5rem;
     border: 1px solid black;
     border-radius: 1rem;
     margin-bottom: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .card > .js > a{
@@ -21,14 +26,22 @@ html {
     color: black;
 }
 
-
+.titleCont{
+    margin-bottom: 1rem;
+}
 .title {
     font-size: 4rem;
     text-decoration: underline;
+    text-underline-offset: 1rem;
     margin-bottom: 1rem;
 }
+.titleDescription {
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 600;
+}
 
-.truthy, .falsy {
+.content {
     font-size: 2rem;
     line-height: 2;
 }
