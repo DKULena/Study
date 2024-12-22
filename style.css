@@ -2,6 +2,12 @@ html {
     font-size: 62.5%; /* 1rem = 10px */
 }
 
+.home {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .card {
     font-size: 5rem;
     border: 1px solid black;
@@ -15,14 +21,6 @@ html {
     color: black;
 }
 
-.home {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-}
-
-.cardContainer {
-    border: 1px solid black;
-}
 
 .title {
     font-size: 4rem;
