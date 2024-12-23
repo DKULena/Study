@@ -41,42 +41,132 @@
             JavaScript 표현식
           </div>
         </div>
-        <div class="content" style="border: .15rem solid black; border-radius: 2rem; display: inline-block; padding: 20px; margin-bottom: 1rem; margin-right: 3rem;">
-          <p style="text-decoration: underline; text-underline-offset: .5rem;">배열 구조분해할당</p>
+        <div
+          class="content"
+          style="
+            border: 0.15rem solid black;
+            border-radius: 2rem;
+            display: inline-block;
+            padding: 20px;
+            margin-bottom: 1rem;
+            margin-right: 3rem;
+          "
+        >
+          <p style="text-decoration: underline; text-underline-offset: 0.5rem">
+            배열 구조분해할당
+          </p>
           <p>let arr = [1, 2, 3];</p>
           <p>let [one, two, three] = arr;</p>
           <p>Result = one:1, two:2, three:3</p>
         </div>
-        <div class="content" style="border: .15rem solid black; border-radius: 2rem; display: inline-block; padding: 20px; margin-right: 3rem;">
-          <p style="text-decoration: underline; text-underline-offset: .5rem;">객체 구조분해할당</p>
-          <pre style="border: 1px solid black;">
+        <div
+          class="content"
+          style="
+            border: 0.15rem solid black;
+            border-radius: 2rem;
+            display: inline-block;
+            padding: 20px;
+            margin-right: 3rem;
+          "
+        >
+          <p style="text-decoration: underline; text-underline-offset: 0.5rem">
+            객체 구조분해할당
+          </p>
+          <pre style="border: 1px solid black">
 let person = {
 name: "이성재",
 age: 27,
 hobby: 코딩
 }
-</pre>            
+</pre
+          >
           <p>let {name, age, hobby} = person;</p>
           <p>Result = name:이성재, age:27, hobby:코딩</p>
         </div>
-        <div class="content" style="border: .15rem solid black; border-radius: 2rem; display: inline-block; padding: 20px;">
-          <p style="text-decoration: underline; text-underline-offset: .5rem;">객체 구조분해할당을 이용해서 함수의 매개변수를 받기</p>
+        <div
+          class="content"
+          style="
+            border: 0.15rem solid black;
+            border-radius: 2rem;
+            display: inline-block;
+            padding: 20px;
+          "
+        >
+          <p style="text-decoration: underline; text-underline-offset: 0.5rem">
+            객체 구조분해할당을 이용해서 함수의 매개변수를 받기
+          </p>
           <pre>
 const func = ({ name, age, hobby }) {
   console.log(name, age, hobby)
-}</pre>
+}</pre
+          >
           <p>Result = name:이성재, age:27, hobby:코딩</p>
         </div>
       </div>
       <div class="card" id="DataType">
         <div class="titleCont">
           <div class="title">원시타입 VS. 객체타입</div>
-          <div class="titleDescription">두 타입으로 나눠놓는 이유는 값이 저장되거나 복사되는 과정이 다르기 때문</div>
+          <div class="titleDescription">
+            두 타입으로 나눠놓는 이유는 값이 저장되거나 복사되는 과정이 다르기
+            때문 (얕은복사 vs. 깊은복사)
+          </div>
         </div>
         <div class="content">
-          원시타입: Number, String, Boolean, Null, Undefined
+          원시타입(불변값): Number, String, Boolean, Null, Undefined
         </div>
+        <p style="font-size: 1.6rem">값 자체로써 변수에 저장, 복사</p>
+
         <div class="content">객체타입: Array, Object, RegexExp(정규표현식)</div>
+        <p style="font-size: 1.6rem">참조값(주소값)을 통해 변수에 저장, 복사</p>
+      </div>
+      <div class="card" id="ArrayMethod">
+        <div class="titleCont">
+          <div class="title">배열 메서드</div>
+          <div class="titleDescription">요소조작: push(), pop(), shift(), unshift(), slice(), concat()</div>
+        </div>
+        <div class="content">let arr = [1, 2, 3];</div>
+        <div class="card block" id="arrayPush">
+          <div class="content">
+            1. push() : 배열의 맨 뒤에 새로운 요소를 추가하는 메서드
+            <p>arr.push(4);</p>
+            <p>arr = [1, 2, 3, 4]</p>
+          </div>
+        </div>
+        <div class="card block" id="arrayPop">
+          <div class="content">
+            2. pop() : 배열의 맨 뒤에 새로운 요소를 제거하고 반환
+            <p>arr.pop();</p>
+            <p>arr = [1, 2]</p>
+          </div>
+        </div>
+        <div class="card block" id="arrayShift">
+          <div class="content">3. shift() : 배열의 맨 앞에 있는 요소를 제거, 반환
+            <p>arr.shift()</p>
+            <p>arr = [2]</p>
+          </div>
+        </div>
+        <div class="card block" id="arrayUnshift">
+          <div class="content">4. unshift() : 배열의 맨 앞에 새로운 요소를 추가
+            <p>arr.shift(0)</p>
+            <p>arr = [0, 2]</p>
+          </div>
+        </div>
+        <div class="card block" id="arraySlice">
+          <div class="content">5. slice() : 가위처럼 배열의 특정 범위를 잘라서 새로운 배열로 반환 <br>(기존 배열이 바뀌지는 않음)
+            <p>arr = [1, 2, 3, 4, 5]</p>
+            <p>let slicedArr = arr.slice(2, 5) {2 <= arr < 5}</p>
+            <p>slicedArr = [1, 2]</p>
+          </div>
+        </div>
+        <div class="card block" id="arrayConcat">
+          <div class="content">
+            6. concat() : 두개의 서로 다른 배열을 이어 붙여서 새로운 배열을 반환
+            <p> let arr1 = [1, 2]</p>
+            <p> let arr2 = [3, 4]</p>
+            <p>concatedArr = arr1.concat(arr2)</p>
+            <p>concatedArr = [1, 2, 3, 4]</p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
